@@ -28,10 +28,16 @@ fun SetUpNavGraph(
                 name = ARG_KEY
             ){
                 type = NavType.IntType
+            },
+            navArgument(
+                name = ARG_KEY1
+            ){
+                type = NavType.StringType
             })
 
         ){
             Log.d("myTag", it.arguments?.getInt(ARG_KEY, 11).toString())
+            Log.d("myTag", it.arguments?.getString(ARG_KEY1, "name").toString())
             DetailScreen(navHostController = navController)
         }
     }
