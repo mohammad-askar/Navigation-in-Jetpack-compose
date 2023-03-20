@@ -8,9 +8,9 @@ sealed class Screen(
     val route: String
 ){
     object Home: Screen("$HOME_ROUTE")
-    object Detail: Screen("$DETAIL_ROUTE?$ARG_KEY={$ARG_KEY}"){ // "detail_screen?id={id}"
-        fun passId(id: Int): String {
-            return "$DETAIL_ROUTE?$ARG_KEY=$id" // "detail_screen?id=id"
+    object Detail: Screen("$DETAIL_ROUTE?$ARG_KEY={$ARG_KEY}&$ARG_KEY1={$ARG_KEY1}"){ // "detail_screen?id={id}"
+        fun passName(id: Int = -1, name: String = "askar"): String {
+            return "$DETAIL_ROUTE?$ARG_KEY=$id&$ARG_KEY1=$name"
         }
     }
 }
