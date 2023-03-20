@@ -1,8 +1,8 @@
 package com.mohammad.askar.navigationinjetpackcompose
 
+import android.util.Log
 import androidx.compose.runtime.Composable
-import androidx.navigation.NavController
-import androidx.navigation.NavHostController
+import androidx.navigation.*
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 
@@ -16,14 +16,22 @@ fun SetUpNavGraph(
     ){
 
         composable(
-            route = Screen.Home.route
+            route = Screen.Home.route,
         ){
+
             HomeScreen(navHostController = navController)
         }
 
         composable(
-            route = Screen.Detail.route
+            route = Screen.Detail.route,
+            arguments = listOf(navArgument(
+                name = ARG_KEY
+            ){
+                type = NavType.IntType
+            })
+
         ){
+            Log.d("myTag", it.arguments?.getInt(ARG_KEY, 11).toString())
             DetailScreen(navHostController = navController)
         }
     }

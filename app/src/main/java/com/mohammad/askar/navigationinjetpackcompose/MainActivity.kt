@@ -10,6 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.navigation.NavGraph
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.rememberNavController
 import com.mohammad.askar.navigationinjetpackcompose.ui.theme.NavigationInJetpackComposeTheme
@@ -17,10 +18,12 @@ import com.mohammad.askar.navigationinjetpackcompose.ui.theme.NavigationInJetpac
 class MainActivity : ComponentActivity() {
 
     lateinit var navHostController: NavHostController
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             NavigationInJetpackComposeTheme {
+                
                 navHostController = rememberNavController()
                 SetUpNavGraph(navController = navHostController)
             }

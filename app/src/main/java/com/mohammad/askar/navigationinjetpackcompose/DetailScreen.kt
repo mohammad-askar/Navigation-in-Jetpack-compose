@@ -17,14 +17,13 @@ fun DetailScreen(
     navHostController: NavHostController
 ) {
     Box(
-        modifier = Modifier
-            .fillMaxSize()
-            .clickable {
-                navHostController.navigateUp()
-            },
-        contentAlignment = Alignment.Center
+        modifier = Modifier.fillMaxSize(),
+        contentAlignment = Alignment.Center,
     ){
         Text(
+            modifier = Modifier.clickable{
+                navHostController.navigateUp()
+            },
             text = "Detail Screen",
             fontSize = 44.sp,
             fontWeight = FontWeight.Bold,
