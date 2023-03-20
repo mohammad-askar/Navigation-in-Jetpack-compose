@@ -22,21 +22,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             NavigationInJetpackComposeTheme {
                 navHostController = rememberNavController()
-                HomeScreen()
+                SetUpNavGraph(navController = navHostController)
             }
         }
-    }
-}
-
-@Composable
-fun Greeting(name: String) {
-    Text(text = "Hello $name!")
-}
-
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    NavigationInJetpackComposeTheme {
-        Greeting("Android")
     }
 }
