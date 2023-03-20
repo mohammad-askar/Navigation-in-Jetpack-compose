@@ -21,7 +21,7 @@ fun HomeScreen(
         modifier = Modifier
             .fillMaxSize()
             .clickable {
-                navHostController.navigate(route = Screen.Detail.passName(id = 99, name = "Askar"))
+                navHostController.navigate(Screen.Detail.passId(id = 404))
             },
         contentAlignment = Alignment.Center,
     ){
