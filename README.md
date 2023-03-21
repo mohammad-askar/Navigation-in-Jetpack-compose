@@ -13,4 +13,4 @@ What did i learn while building this project?
 
 ## Screenshots
 
-![App Screenshot]([https://im2.ezgif.com/tmp/ezgif-2-4ff7e11086.gif](https://www.4shared.com/account/home.jsp#dir=jWf3EhQe))
+![App Screenshot](https://www.4shared.com/account/home.jsp#dir=jWf3EhQe)
