@@ -13,4 +13,4 @@ What did i learn while building this project?
 
 ## Screenshots
 
-![App Screenshot](https://www.4shared.com/account/home.jsp#dir=jWf3EhQe)
+![App Screenshot](https://www.mediafire.com/file/nkmjbrduyair46y/Video-2023-03-21-124531.gif/file)
